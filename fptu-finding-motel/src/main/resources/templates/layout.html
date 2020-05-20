@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" th:href="@{bootstrap/css/bootstrap.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{bootstrap/css/bootstrap-grid.min.css}">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" th:href="@{/css/style.css}">
+
+    <!-- vue-js -->
+    <script th:src="@{/js/vue.js}" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <header th:fragment="header">
+        <div id="header" class="container clearfix">
+            <div class="row">
+                <div class="col-6">
+                    <a class="logo" href="#">
+                        <img class="img-logo" th:src="@{image/download.jpg}"/>
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col button">
+                            <button class="btn btn-danger post overflow-text">Đăng Tin Mới</button>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-2 px-5px">
+                                    <a class="user" href="#"></a>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-light link">ĐĂNG NHẬP</button>
+                                    <button type="button" class="btn btn-light link">ĐĂNG KÝ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">TRANG CHỦ </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">PHÒNG TRỌ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CĂN HỘ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NHÀ NGUYÊN CĂN </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Ở GHÉP </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">HƯỚNG DẪN </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="cover_img">
+                <a class="cover" href="#">
+                    <img class="img-cover" th:src="@{image/dai-hoc-fpt-1.jpg}" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="layout :: head"></div>
+
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <div id="webpage">
+        <header th:replace="layout :: header"></header>
+        <main id="main">
+            <div id="searchbar">
+                <div class="container">
+                    <div class=filter_area>
+                        <div class="search_field">
+                            <div class="clearfix">
+                                <div class="row">
+                                    <div class="col filter-type">
+                                        <div class="search_field_item search_field_item_loaitin"></div>
+                                        <label class="search_field_item_label overflow-text">Loại tin</label>
+                                        <div class="dropdown">
+                                            <select id="search_room_type" class="search_type search-dropdown" name="type"
+                                                    aria-hidden="true">
+                                                <option value="0">Tất cả</option>
+                                                <option value="1">Phòng trọ</option>
+                                                <option value="2">Căn hộ</option>
+                                                <option value="3">Nhà nguyên căn</option>
+                                                <option value="4">Ở ghép</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col filter-type">
+                                        <div class="search_field_item search_field_item_giaca"></div>
+                                        <label class="search_field_item_label overflow-text">Giá cả</label>
+                                        <div class="dropdown">
+                                            <select id="search_room_cost" class="search_cost search-dropdown" name="type"
+                                                    aria-hidden="true">
+                                                <option value="1">Tất cả</option>
+                                                <option value="2">Dưới 1 triệu</option>
+                                                <option value="3">1 triệu - 1.5 triệu</option>
+                                                <option value="4"> 1.5 triệu - 2 triệu</option>
+                                                <option value="5">2 triệu - 2.5 triệu</option>
+                                                <option value="6">2.5 triệu - 3 triệu</option>
+                                                <option value="7">3 triệu - 3.5 triệu</option>
+                                                <option value="8">3.5 triệu - 4 triệu</option>
+                                                <option value="9">4 triệu - 4.5 triệu</option>
+                                                <option value="10">4.5 triệu - 5 triệu</option>
+                                                <option value="11">Trên 5 triệu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col filter-type">
+                                        <div class="search_field_item search_field_item_dientich"></div>
+                                        <label class="search_field_item_label overflow-text">Diện tích</label>
+                                        <div class="dropdown">
+                                            <select id="search_room_square" class="search_square search-dropdown" name="type"
+                                                    aria-hidden="true">
+                                                <option value="1">Tất cả</option>
+                                                <option value="2">Dưới 20 m2</option>
+                                                <option value="3">20 m2 - 30 m2</option>
+                                                <option value="4">30 m2 - 40 m2</option>
+                                                <option value="5">40 m2 - 50 m2</option>
+                                                <option value="6">50 m2 - 60 m2</option>
+                                                <option value="7">60 m2 - 70 m2</option>
+                                                <option value="8">70 m2 - 80 m2</option>
+                                                <option value="9">80 m2 - 90 m2</option>
+                                                <option value="10">90 m2 - 100 m2</option>
+                                                <option value="11">Trên 100 m2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col filter-type">
+                                        <div class="search_field_item search_field_item_distance"></div>
+                                        <label class="search_field_item_label overflow-text">Giá cả</label>
+                                        <div class="dropdown">
+                                            <select id="search_room_distance" class="search_distance search-dropdown" name="type"
+                                                    aria-hidden="true">
+                                                <option value="1">Tất cả</option>
+                                                <option value="2">Dưới 1 km</option>
+                                                <option value="3">1 km - 2 km</option>
+                                                <option value="4">2 km - 3 km</option>
+                                                <option value="5"> 3 km - 4 km</option>
+                                                <option value="6">4 km - 5 km</option>
+                                                <option value="7">Trên 5 km</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col filter-type">
+                                        <button class="btn btn-danger search ">TÌM KIẾM</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="news">
+                <div class="container">
+                    <div class="newsarea">
+                        <h2>Tin Nổi Bật</h2>
+                        <p>Tìm trọ FPTU là website cho phép tím phòng trọ, đăng tin <br> phòng trọ dành cho chủ trọ và
+                            sinh viên đại học FPT</p>
+
+                        <div id="news_highlight">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="col-display">
+                                        <div>
+                                            <img class="phongtro" th:src="@{image/thiet-ke-phong-tro-dep-6.jpg}"></img>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left">1.500.000</div>
+                                        </div>
+                                        <a class="name_tro overflow-text" href="#">Phòng trọ Nhà xanh cơ sở Hòa Lạc</a>
+                                        <div>
+                                            <div class="address_logo">
+                                                <i class="distance">1,5km</i>
+                                            </div>
+                                            <div class="square_logo">
+                                                <i class="square">25m2</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-display">
+                                        <div>
+                                            <img class="phongtro" th:src="@{image/thiet-ke-phong-tro-dep-6.jpg}"></img>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left">1.500.000</div>
+                                        </div>
+                                        <a class="name_tro overflow-text" href="#">Phòng trọ Nhà xanh cơ sở Hòa Lạc</a>
+                                        <div class="address_logo">
+                                            <i class="distance">1,5km</i>
+                                        </div>
+                                        <div class="square_logo">
+                                            <i class="square">25m2</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-display">
+                                        <div>
+                                            <img class="phongtro" th:src="@{image/thiet-ke-phong-tro-dep-6.jpg}"></img>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left">1.500.000</div>
+                                        </div>
+                                        <a class="name_tro overflow-text" href="#">Phòng trọ Nhà xanh cơ sở Hòa Lạc</a>
+                                        <div class="address_logo">
+                                            <i class="distance">1,5km</i>
+                                        </div>
+                                        <div class="square_logo">
+                                            <i class="square">25m2</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="col-display">
+                                        <div>
+                                            <img class="phongtro" th:src="@{image/thiet-ke-phong-tro-dep-6.jpg}"></img>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left">1.500.000</div>
+                                        </div>
+                                        <a class="name_tro overflow-text" href="#">Phòng trọ Nhà xanh cơ sở Hòa Lạc</a>
+                                        <div class="address_logo">
+                                            <i class="distance">1,5km</i>
+                                        </div>
+                                        <div class="square_logo">
+                                            <i class="square">25m2</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-display">
+                                        <div>
+                                            <img class="phongtro" th:src="@{image/thiet-ke-phong-tro-dep-6.jpg}"></img>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left">1.500.000</div>
+                                        </div>
+                                        <a class="name_tro overflow-text" href="#">Phòng trọ Nhà xanh cơ sở Hòa Lạc</a>
+                                        <div class="address_logo">
+                                            <i class="distance">1,5km</i>
+                                        </div>
+                                        <div class="square_logo">
+                                            <i class="square">25m2</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-display">
+                                        <div>
+                                            <img class="phongtro" th:src="@{image/thiet-ke-phong-tro-dep-6.jpg}"></img>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left">1.500.000</div>
+                                        </div>
+                                        <a class="name_tro overflow-text" href="#">Phòng trọ Nhà xanh cơ sở Hòa Lạc</a>
+                                        <div class="address_logo">
+                                            <i class="distance">1,5km</i>
+                                        </div>
+                                        <div class="square_logo">
+                                            <i class="square">25m2</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

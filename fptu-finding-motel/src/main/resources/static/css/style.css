@@ -1,0 +1,204 @@
+
+body{
+    background-color: white;
+}
+#webpage{
+    z-index: 10;
+    position: relative;
+}
+.logo{
+    display: block;
+    float: left;
+    background-size: 252px 94px;
+}
+.post{
+    color: white;
+    background-color: #00B050;
+    float: right;
+    margin-top: 28px;
+    border:none;
+}
+#header{
+    background-color: #fff;
+}
+#header .header_right{
+    float: right;
+    background-size: 888px 94px;
+}
+#header .header_left{
+    float: left;
+    background-size: 252px 94px;
+}
+.button{
+    border-right: 1px solid #00B050;
+
+}
+.user{
+    width: 45px;
+    height: 45px;
+    background: url(/image/person-circle-outline.svg)  left center no-repeat;
+    display: block;
+    float: left;
+    margin-top: 25px;
+    background-size: 45px 45px;
+}
+.link{
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    width: 111.74px;
+}
+.btn-light:hover{
+    background-color: #00B050;
+}
+.navigation{
+    font-weight: bold;
+}
+.nav-item{
+    color: white;
+}
+.navbar-nav{
+    margin: auto;
+}
+li:hover{
+    background-color: #00B050;
+}
+.cover{
+    display: block;
+    float: left;
+    background-size: 1110px 346px;
+}
+.searchbar{
+    margin-top: 10px;
+}
+
+.filter_area{
+    background-color: #B4DD9F;
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 15px;
+}
+label{
+    font-weight: bold;
+}
+#searchbar .col{
+    border-right: 1px solid #00B050;
+}
+.search{
+    display: block;
+    margin: auto;
+    margin-top: 13px;
+    background-color: #00B050;
+    border: none;
+    font-weight: bold ;
+}
+.newsarea{
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 15px;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-style: italic;
+}
+.phongtro{
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: center;
+    margin: auto;
+}
+#news_highlight{
+    padding-top: 30px;
+}
+.col-display{
+    background-color: rgb(227, 244, 250);
+    display: block;
+    margin: auto;
+}
+.address_logo{
+    width: 20px;
+    height: 20px;
+    background: url(/image/signs.png)  left center no-repeat;
+    display: block;
+    margin-left: 37px;
+    margin-top: 15px;
+    background-size:20px 20px;
+}
+.square_logo{
+    width: 20px;
+    height: 20px;
+    background: url(/image/interface.png)  left center no-repeat;
+    display: block;
+    margin-left: 204px;
+    margin-top: -20px;
+    background-size:20px 20px;
+}
+.name_tro{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+#news_highlight .col{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 55px;
+}
+.distance{
+    margin-left: 33px;
+
+}
+.square{
+    margin-left: 30px;
+}
+.bottom-left {
+    width: 100px;
+    height: 30px;
+    background-color: #00B050;
+    position: absolute;
+    bottom: 110px;
+    left: 37px;
+    font-weight: bold;
+    color: #fff;
+}
+.top-right {
+    width: 30px;
+    height: 30px;
+    background: url(/image/love-and-romance.png)  left center no-repeat;
+    position: absolute;
+    top: 9px;
+    right: 45px;
+    background-size:30px 30px;
+}
+.img-cover{
+    width: 100%;
+}
+.img-logo{
+    width: 57%;
+}
+.search-dropdown{
+    width: 100%;
+}
+.filter-type{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.overflow-text{
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.px-5px{
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+}
